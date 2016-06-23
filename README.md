@@ -95,11 +95,9 @@ files as-is and get everything working before making changes.
 ### Editing the Javascript Files
 
 The javascript files are located in the HelloWorld/source folder of the repository.
-1. The AlexaSkill.js file is boiler plate code, and does not
-   need to be edited at all.
+1. The AlexaSkill.js file is boiler plate code, and does not need to be edited at all.
 2. index.js is code that you can edit to create your skill.
-3. Now save your changes, and zip both files up in a single archive file.
-  You'll need the archive file in the next section.
+3. Now save your changes, and zip both files up in a single archive file. You'll need the archive file in the next section.
 
 ### Configure the Lambda Function
 
