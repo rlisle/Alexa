@@ -62,7 +62,7 @@ HelloWorldSkill.prototype.intentHandlers = {
 
   "GoodByeIntent": function (intent, session, response) {
       var speechOutput = "Good-bye, World!"
-      response.say(speechOutput);
+      response.tell(speechOutput);
   },
 
   "AMAZON.HelpIntent": function (intent, session, response) {

@@ -1,7 +1,7 @@
 HelloIntent	hello
 HelloIntent	hi there
 HelloIntent what's happening
-GoodByeIntent Good-bye
+GoodByeIntent Goodbye
 GoodByeIntent bye
-GoodByeIntent bye-bye
+GoodByeIntent bye bye
 GoodByeIntent see ya
