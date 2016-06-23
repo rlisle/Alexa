@@ -26,6 +26,7 @@ don't own or have access to an Echo.
 
 An AWS account is free, but you will need a valid credit card to setup
 an account.
+
 1. Go to aws.amazon.com and choose Create a Free AWS Account.
 1. Follow the instructions. Don't worry about the IAM role,
 we'll do that later.
@@ -95,6 +96,7 @@ files as-is and get everything working before making changes.
 ### Editing the Javascript Files
 
 The javascript files are located in the HelloWorld/source folder of the repository.
+
 1. The AlexaSkill.js file is boiler plate code, and does not need to be edited at all.
 1. index.js is code that you can edit to create your skill.
 1. Now save your changes, and zip both files up in a single archive file. You'll need the archive file in the next section.
