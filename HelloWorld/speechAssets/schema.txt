@@ -1,0 +1,12 @@
+{
+  "intents": [
+    {
+      "intent": "HelloIntent",
+      "slots": []
+    },
+    {
+      "intent": "GoodByeIntent",
+      "slots": []
+    }
+  ]
+}
