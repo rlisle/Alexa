@@ -65,11 +65,11 @@ Skill](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs
 provides a lot of information about choosing a good invocation name,
 but basically it needs to be several syllables long, and best if not
 similar to words that Alexa already recognizes as a command.
-So the phrase "gee whiz game" is pretty good, since it is fairly unique and
+So the phrase "hello world" is pretty good, since it is fairly unique and
 3 syllables. But using the word "weather" would not be good because
 Alexa already responds to that word.
 
-## Creating an Alexa Skill
+## Creating a simple Hello World Alexa Skill
 
 So now that your accounts are setup, and you've decided what invocation
 name to use, we're ready to go ahead an create a new Alexa Skill. 
@@ -77,12 +77,10 @@ You'll need to do 2 things:
 
 1. Create a web service that will process the voice input
   * We'll create an AWS lambda function to do this.
-  * Don't worry, this will be mostly cut-and-paste, with a couple edits
-  to provide your own specific account information.
+  * Don't worry, this will be mostly cut-and-paste, and you can edit it to your liking later.
 2. Use the Alexa Skill Kit portal to configure our Alexa skill
   * List the sentences that Alexa will recognize
-  * Provide lists of any variable information we want to use in our sentences.
-
+  
 ## Create an AWS Lambda Function
 
 This is probably the most difficult part of this process.
@@ -90,13 +88,13 @@ I've tried to simplify it as much as possible.
 I recommend that you keep it simple until everything is working,
 and only then go back and make any desired modifications.
 
-The first step will be to edit the javascript files included in
-this package to add your particular account and device information.
-then you'll need to upload them to your AWS account.
+The first step will be to upload the javascript files included in
+this package to your AWS account. I recommend that you upload the
+files as-is and get everything working before making changes.
 
 ### Editing the Javascript Files
 
-The javascript files are located in the source folder of the repository.
+The javascript files are located in the HelloWorld/source folder of the repository.
 1. The AlexaSkill.js file is boiler plate code, and does not
    need to be edited at all.
 2. index.js is code that you can edit to create your skill.
@@ -157,8 +155,8 @@ by selecting ***SIGN IN*** in the upper right.
 4. Select the ***Alexa Skills Kit*** Get Started button.
 You may want to bookmark this page.
 5. Select ***Add a New Skill***
-6. Provide a name of your choosing (eg. "GeeWhizGame")
-7. Provide the invocation words "gee whiz game"
+6. Provide a name of your choosing (eg. "HelloWorld")
+7. Provide the invocation words (eg. "hello world")
 8. Provide a version number of your choosing (eg. "1.0")
 9. Set the Endpoint to ***Lambda ARN (Amazon Resource Name)***
 10. Copy into the Endpoint field the ARN that you previously copied.
@@ -175,12 +173,10 @@ This is where we will define the things that we can say to Alexa.
 
 1. Copy and paste the contents of the IntentSchema.json file from the
    speechAssets folder into the Intent Schema section.
-2. Select ***Add Slot Type***
-3. Enter Type ***AMAZON.US_FIRST_NAME***
-4. Select OK
-5. Copy and paste the contents of the SampleUtterances.txt file from
+2. Ignore the slot section for this skill.
+3. Copy and paste the contents of the SampleUtterances.txt file from
    the speechAssets folder into the Sample Utterances section.
-7. Select ***Next***
+4. Select ***Next***
 
 And this will bring you to the test page. You're ready to test your new skill.
 
